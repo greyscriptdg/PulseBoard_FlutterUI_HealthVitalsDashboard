@@ -38,7 +38,7 @@ class _HeartRateChartState extends State<HeartRateChart>
             animationValue: _controller.value,
             heartRates: _heartRates,
           ),
-          child: Container(),
+          child: Container(height: 100),
         );
       },
     );
