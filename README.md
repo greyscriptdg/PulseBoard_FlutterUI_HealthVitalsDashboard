@@ -108,7 +108,6 @@ Include this credit in your app's About section, README, or documentation.
 
 ## 🙌 Acknowledgements
 
-Crafted with care by GreyScript Technologies (mention required)
 If you use this project, drop us a ⭐ or tag us on LinkedIn/Twitter — we'd love to see what you build!
 
 ## 🤝 Contributing
