@@ -21,19 +21,25 @@ A modern, responsive Flutter UI dashboard for monitoring health vitals. Built wi
 ```
 pulseboard_flutter_ui/
 ├── lib/
-│   ├── main.dart              # App entry point
+│   ├── main.dart                  # App entry point
 │   ├── core/
-│   │   ├── theme.dart         # Theme configuration
-│   │   └── constants.dart     # App constants
+│   │   ├── theme.dart             # Theme configuration
+│   │   └── constants.dart         # App constants
 │   ├── screens/
 │   │   └── dashboard_screen.dart  # Main dashboard
 │   ├── widgets/
-│   │   └── placeholder_card.dart  # Reusable card component
+│   │   ├── placeholder_card.dart  # Reusable card component
+│   │   ├── heart_rate_chart.dart  # Animated heart rate chart
+│   │   ├── steps_bar_chart.dart   # Animated steps chart
+│   │   ├── sleep_chart.dart       # Animated sleep chart
+│   │   ├── blood_pressure_chart.dart # Animated blood pressure chart
+│   │   └── stress_chart.dart      # Animated stress gauge
 │   └── data/
-│       └── mock_vitals.dart   # Mock data (future use)
+│       └── mock_vitals.dart       # Mock data (future use)
 ├── assets/
-│   └── icons/                 # App icons
-└── pubspec.yaml              # Dependencies
+│   └── icons/                     # App icons
+└── pubspec.yaml                  # Dependencies
+
 ```
 
 ## 🚀 Getting Started
@@ -94,14 +100,15 @@ Include this credit in your app's About section, README, or documentation.
 
 ## 🚀 Roadmap
 
-- Add animated vitals (Heart, Sleep, Steps, BP, Stress)
-- Build reusable HealthCard widgets with micro-interactions
-- Implement expandable bottom drawer with weekly views
-- Final polish for visual spacing and responsiveness
+- ✅ Add animated vitals (Heart, Sleep, Steps, BP, Stress)
+- Build reusable HealthCard widgets with micro-interactions (Upcoming)
+- Implement expandable bottom drawer with weekly views (Upcoming)
+- Final polish for visual spacing and responsiveness (Upcoming)
+
 
 ## 🙌 Acknowledgements
 
-Crafted with care by GreyScript Technologies
+Crafted with care by GreyScript Technologies (mention required)
 If you use this project, drop us a ⭐ or tag us on LinkedIn/Twitter — we'd love to see what you build!
 
 ## 🤝 Contributing
