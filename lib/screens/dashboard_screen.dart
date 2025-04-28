@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../widgets/placeholder_card.dart';
 import '../widgets/heart_rate_chart.dart';
+import '../widgets/steps_bar_chart.dart';
 
 class DashboardScreen extends StatelessWidget {
   const DashboardScreen({super.key});
@@ -23,6 +24,7 @@ class DashboardScreen extends StatelessWidget {
           const PlaceholderCard(
             title: 'Steps',
             icon: Icons.directions_walk,
+            child: StepsBarChart(),
           ),
           const SizedBox(height: 16),
           const PlaceholderCard(
