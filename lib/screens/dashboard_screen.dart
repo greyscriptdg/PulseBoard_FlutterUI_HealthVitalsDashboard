@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import '../widgets/placeholder_card.dart';
 import '../widgets/heart_rate_chart.dart';
 import '../widgets/steps_bar_chart.dart';
+import '../widgets/sleep_chart.dart';
+import '../widgets/blood_pressure_chart.dart'; // 👈 Import BloodPressureChart
 
 class DashboardScreen extends StatelessWidget {
   const DashboardScreen({super.key});
@@ -30,11 +32,13 @@ class DashboardScreen extends StatelessWidget {
           const PlaceholderCard(
             title: 'Sleep',
             icon: Icons.bedtime,
+            child: SleepChart(),
           ),
           const SizedBox(height: 16),
           const PlaceholderCard(
             title: 'Blood Pressure',
             icon: Icons.bloodtype,
+            child: BloodPressureChart(), // 👈 Inserted BloodPressureChart here
           ),
           const SizedBox(height: 16),
           const PlaceholderCard(
