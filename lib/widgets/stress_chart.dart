@@ -42,7 +42,7 @@ class _StressChartState extends State<StressChart>
             animationValue: _animation.value,
             stressLevel: stressLevel,
           ),
-          child: Container(height: 100),
+          child: Container(height: 80), // 👈 Reduced height from 100 → 80
         );
       },
     );
@@ -62,7 +62,7 @@ class _StressPainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     final backgroundPaint = Paint()
       ..color = Colors.grey.withOpacity(0.3)
-      ..strokeWidth = 8
+      ..strokeWidth = 6 // 👈 Reduced stroke width a little for balance
       ..style = PaintingStyle.stroke;
 
     final stressPaint = Paint()
@@ -71,12 +71,12 @@ class _StressPainter extends CustomPainter {
         startAngle: 0.0,
         endAngle: 2 * pi,
       ).createShader(Rect.fromCircle(center: size.center(Offset.zero), radius: size.width / 2))
-      ..strokeWidth = 8
+      ..strokeWidth = 6
       ..style = PaintingStyle.stroke
       ..strokeCap = StrokeCap.round;
 
     final center = size.center(Offset.zero);
-    final radius = size.width / 2.5;
+    final radius = size.width / 4; // 👈 Adjusted radius for better fit
 
     // Draw background circle
     canvas.drawCircle(center, radius, backgroundPaint);
