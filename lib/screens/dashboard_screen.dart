@@ -3,7 +3,8 @@ import '../widgets/placeholder_card.dart';
 import '../widgets/heart_rate_chart.dart';
 import '../widgets/steps_bar_chart.dart';
 import '../widgets/sleep_chart.dart';
-import '../widgets/blood_pressure_chart.dart'; // 👈 Import BloodPressureChart
+import '../widgets/blood_pressure_chart.dart';
+import '../widgets/stress_chart.dart'; // 👈 Import StressChart
 
 class DashboardScreen extends StatelessWidget {
   const DashboardScreen({super.key});
@@ -38,12 +39,13 @@ class DashboardScreen extends StatelessWidget {
           const PlaceholderCard(
             title: 'Blood Pressure',
             icon: Icons.bloodtype,
-            child: BloodPressureChart(), // 👈 Inserted BloodPressureChart here
+            child: BloodPressureChart(),
           ),
           const SizedBox(height: 16),
           const PlaceholderCard(
             title: 'Stress',
             icon: Icons.self_improvement,
+            child: StressChart(), // 👈 Inserted StressChart here
           ),
         ],
       ),
