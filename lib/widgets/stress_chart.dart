@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 import 'package:flutter/material.dart';
 import 'dart:math';
 
@@ -78,7 +76,7 @@ class _StressPainter extends CustomPainter {
       ..strokeCap = StrokeCap.round;
 
     final center = size.center(Offset.zero);
-    final radius = size.width / 7; // 👈 Adjusted radius for better fit
+    final radius = size.width / 4; // 👈 Adjusted radius for better fit
 
     // Draw background circle
     canvas.drawCircle(center, radius, backgroundPaint);
@@ -93,4 +91,3 @@ class _StressPainter extends CustomPainter {
     return oldDelegate.animationValue != animationValue;
   }
 }
->>>>>>> Stashed changes
